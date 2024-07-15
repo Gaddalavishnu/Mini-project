@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Temperature</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #070707fe;
+            background-size: xx-small;
+            color: rgb(249, 247, 247);
+            text-align: center;
+            padding: 10px;
+            font-size: xx-small;
+            text-align: left;
+        }
+        .nav-bar {
+            background-color: #007acc;
+            overflow: hidden;
+        }
+        .nav-bar a {
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .banner {
+            background-color: #3399ff;
+            text-align: center;
+            padding: 50px 0;
+            color:white;
+        }
+        .predict-button {
+            background-color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .about1{
+            color:black;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Smart Home Temperature</h1>
+    </div>
+    <div class="nav-bar">
+        <a href="#about">About</a>
+        <a href="/index">Predict</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="banner">
+        <h2>Welcome to Smart Home Temperature</h2>
+        <a href="{{url_for('index')}}">
+        <button class="predict-button">Click Here to Predict</button></a>
+    </div>
+     <div class="about1">
+        <h3>About</h3>
+        <p>Smart Wi-Fi thermostats have moved well beyond the function they were originally designed for; <br>namely, controlling heating and cooling comfort in buildings.</p>
+        <p>They are now also learning from occupant behaviors and permit occupants to control their comfort remotely.</p>
+        <p>This project seeks to go beyond this state of the art by utilizing smart Wi-Fi thermostat data in residences to develop dynamic predictive models for room temperature and energy use.</p>
+     </div>
+
+</body>
+</html>
